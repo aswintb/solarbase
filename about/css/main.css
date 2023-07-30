@@ -359,13 +359,6 @@ section {
     right: 0;
   }
 
-  .mobile-nav-active .navbar:before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(14, 29, 52, 0.8);
-    z-index: 9996;
-  }
 }
 
 .Parallax-video video {
@@ -391,7 +384,7 @@ section {
 }
 
 .featured-services .service-item .icon i {
-  color: #001f8d;
+  color: #f37321;
   font-size: 48px;
   transition: 0.3s;
 }
@@ -444,7 +437,7 @@ section {
   font-weight: 700;
   font-size: 32px;
   font-family: var(--font-secondary);
-  color: #001f8d;
+  color: #f75f01;
 }
 
 .about .content ul {
@@ -469,7 +462,7 @@ section {
 .about .content ul h5 {
   font-size: 18px;
   font-weight: 700;
-  color: #19335c;
+  color: #963d05;
 }
 
 .about .content ul p {
@@ -545,6 +538,61 @@ section {
 .about .play-btn:hover:after {
   border-left: 15px solid var(--color-primary);
   transform: scale(20);
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+/*----------------------------------------------------------------
+# Values
+-----------------------------------------------------------------*/
+.values .content h3 {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: var(--font-secondary);
+  color: #f75f01;
+}
+
+.values .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values .content ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+
+.values .content ul i {
+  flex-shrink: 0;
+  font-size: 48px;
+  color: var(--color-primary);
+  margin-right: 20px;
+  line-height: 0;
+}
+
+.values .content ul h5 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #963d05;
+}
+
+.values .content ul p {
+  font-size: 15px;
+}
+
+.values .content p:last-child {
+  margin-bottom: 0;
 }
 
 @keyframes pulsate-btn {
